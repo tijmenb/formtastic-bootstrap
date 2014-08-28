@@ -2,10 +2,10 @@ module FormtasticBootstrap
 
   class FormBuilder < Formtastic::FormBuilder
 
-    configure :default_inline_error_class, 'help-inline'
-    configure :default_block_error_class,  'help-block'
-    configure :default_inline_hint_class,  'help-inline'
-    configure :default_block_hint_class,   'help-block'
+    configure :default_inline_error_class, 'help-inline help-error'
+    configure :default_block_error_class,  'help-block help-error'
+    configure :default_inline_hint_class,  'help-inline help-hint'
+    configure :default_block_hint_class,   'help-block help-hint'
 
     def self.default_error_class
       # self.default_inline_error_class
